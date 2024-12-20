@@ -22,13 +22,11 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useDropzone } from "react-dropzone";
-import CardMedia from "@mui/material/CardMedia";
 
 export default function Home() {
     const [image, setImage] = useState(null);
     const [ocrText, setOcrText] = useState("");
     const [menuItems, setMenuItems] = useState([]);
-    const [translatedItems, setTranslatedItems] = useState([]);
     const [language, setLanguage] = useState("en");
     const [loading, setLoading] = useState(false);
     const [openSnackbar, setOpenSnackbar] = useState(false);
@@ -81,7 +79,7 @@ export default function Home() {
             setOpenSnackbar(true);
             return;
         }
-
+    
         try {
             setLoading(true);
             const translations = await Promise.all(
@@ -98,8 +96,7 @@ export default function Home() {
                         })
                 )
             );
-            setTranslatedItems(translations);
-            setMenuItems(translations); // MenuItems listesini günceller
+            setMenuItems(translations); // Directly update menuItems with translated items
             setSnackbarMessage("Menu translated successfully!");
             setOpenSnackbar(true);
         } catch (error) {
@@ -109,7 +106,7 @@ export default function Home() {
         } finally {
             setLoading(false);
         }
-    };
+    }; 
 
     const handleTabChange = (event, newValue) => {
         setTabIndex(newValue);
