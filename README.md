@@ -43,5 +43,5 @@ An interactive digital solution for Turkish Airlines passengers to explore in-fl
 Local - http://localhost:3000/
 ### 1. Clone the Repository  
 ```bash  
-git clone <repository-url>  
+git clone <Busraakgul/flight-menu-app>  
 cd flight-menu-web-app  
