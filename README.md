@@ -1,40 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Flight Menu Web Application  
 
-## Getting Started
+An interactive digital solution for Turkish Airlines passengers to explore in-flight meal menus. This web application allows users to upload meal menu images, extract menu information using OCR, and interact with the menu via a multilingual chat interface.
 
-First, run the development server:
+## Features  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. **Image Upload and Menu Extraction**  
+- Upload or capture meal menu images directly.  
+- Extract text from images using Optical Character Recognition (OCR).  
+- Automatically parse and structure menu items with descriptions.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. **Menu Display**  
+- View extracted menu items in an intuitive, card-based UI.  
+- Supports features like translations for menu items.  
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 3. **Interactive Chat Interface**  
+- Ask questions about menu items, including specific dietary inquiries (e.g., gluten-free options).  
+- Multilingual support: Detects and responds in the user's preferred language.  
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 4. **Dark Mode**  
+- Seamless toggling between light and dark themes for enhanced usability.  
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used  
 
-## Learn More
+### Frontend  
+- **React.js** with **Material UI** for the UI components and styling.  
+- **Chakra UI** for chat interface enhancements.  
 
-To learn more about Next.js, take a look at the following resources:
+### Backend  
+- **Next.js** for server-side rendering and API routes.  
+- **Axios** for HTTP requests to APIs.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### OCR and Translation  
+- **Tesseract.js**: Optical Character Recognition for text extraction.  
+- **Google Translate API**: Translation for multilingual support.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deployment  
+- Hosted on **Vercel** for scalable and easy deployment.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Installation  
+Local - http://localhost:3000/
+### 1. Clone the Repository  
+```bash  
+git clone <repository-url>  
+cd flight-menu-web-app  
