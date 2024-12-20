@@ -44,4 +44,4 @@ Local - http://localhost:3000/
 ### 1. Clone the Repository  
 ```bash  
 git clone <Busraakgul/flight-menu-app>  
-cd flight-menu-web-app  
+cd flight-menu-app  
