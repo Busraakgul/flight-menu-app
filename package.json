@@ -23,6 +23,7 @@
     "fs-extra": "^11.2.0",
     "google-translate-api-x": "^10.7.1",
     "langdetect": "^0.2.1",
+    "multer": "^1.4.5-lts.1",
     "next": "15.1.0",
     "openai": "^4.76.3",
     "react": "^19.0.0",
