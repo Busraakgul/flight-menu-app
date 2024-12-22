@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { useState } from "react";
 import axios from "axios";
 import {
@@ -158,7 +160,7 @@ export default function Home() {
 
             {/* Header */}
             <Box textAlign="center" mt={4} mb={4}>
-                <img
+                <Image
                     src="https://www.uted.org/assets/images/slider/__Page_e4838d74-3ce7-4103-ba42-446d71e4c1f2686.png"
                     alt="Turkish Airlines Logo"
                     style={{ height: "60px", marginBottom: "20px" }}
@@ -268,7 +270,7 @@ export default function Home() {
                 {tabIndex === 1 && (
                     <Box textAlign="center">
                         {uploadedImageUrl ? (
-                            <img src={uploadedImageUrl} alt="Uploaded" style={{ maxWidth: "100%", height: "auto" }} />
+                            <Image src={uploadedImageUrl} alt="Uploaded" style={{ maxWidth: "100%", height: "auto" }} />
                         ) : (
                             <Typography variant="body2" color="textSecondary">
                                 No image uploaded yet.
