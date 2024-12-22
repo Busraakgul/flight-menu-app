@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { useState } from "react";
 import axios from "axios";
 import {
@@ -268,7 +270,8 @@ export default function Home() {
                 {tabIndex === 1 && (
                     <Box textAlign="center">
                         {uploadedImageUrl ? (
-                            <img src={uploadedImageUrl} alt="Uploaded" style={{ maxWidth: "100%", height: "auto" }} />
+                            ///<img src={uploadedImageUrl} alt="Uploaded" style={{ maxWidth: "100%", height: "auto" }} />
+                            <Image src="/path/to/image" alt="Description" width={500} height={300} />
                         ) : (
                             <Typography variant="body2" color="textSecondary">
                                 No image uploaded yet.
